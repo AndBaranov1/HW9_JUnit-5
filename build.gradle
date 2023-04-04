@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            "com.codeborne:selenide:6.12.2",
+            "org.junit.jupiter:junit-jupiter:5.9.2",
+            "com.github.javafaker:javafaker:1.0.2",
+            'com.opencsv:opencsv:5.7.1',
+            'com.codeborne:pdf-test:1.8.1',
+            'com.codeborne:xls-test:1.4.3',
+            "org.slf4j:slf4j-simple:2.0.6",
+            'com.google.code.gson:gson:2.10.1'
+    )
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+}
