@@ -1,5 +1,4 @@
-package guru.qa.Lesson_10.parsing;
-
+package guru.qa.lesson_10.parsing;
 
 public class Car {
     public String brand;

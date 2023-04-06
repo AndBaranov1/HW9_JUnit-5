@@ -1,4 +1,4 @@
-package guru.qa.Lesson_10.parsing;
+package guru.qa.lesson_10.parsing;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.List;
 
 public class ReadFileJsonParsingTest {
 

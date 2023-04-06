@@ -1,9 +1,8 @@
-package guru.qa.Lesson_10.parsing;
+package guru.qa.lesson_10.parsing;
 
 import com.codeborne.pdftest.PDF;
 import com.codeborne.xlstest.XLS;
 import com.opencsv.CSVReader;
-import jdk.jfr.Description;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -62,7 +61,7 @@ public class ReadFileParsingTest {
                 if (entry.getName().equals("qaguru.csv")) {
                     CSVReader csvReader = new CSVReader(new InputStreamReader(zi));
                     List<String[]> content = csvReader.readAll();
-                    Assertions.assertArrayEquals(new String[] {"Студент", " Занятие"}, content.get(0));
+                    Assertions.assertArrayEquals(new String[] {"Student", "Lesson"}, content.get(0));
                 }
             }
         }
